@@ -14,7 +14,7 @@
 
 /* Sets entire portfolio background color */
 body {
-  background-color: #d9dcd6;
+  background-color: #ffffff;
 }
 
 /* Defines nav bar link spacing, positioning and font  */
@@ -25,20 +25,18 @@ nav {
   font-family: sans-serif;
   background-color: var(--sred);
   color: #ffffff;
-  display: flex;
   border-radius: 0 0 15px 15px;
   margin: auto;
   font-size: 20px;
   flex-direction: row;
-  display: flex;
-  padding: 0 30px;
   text-align: center;
 }
 
 /* Sets font size for my name on nav bar and ensures letters are all displayed in line */
 nav h1 {
-  display: inline-block;
+  display: flex;
   font-size: 48px;
+  
 }
 
 /* Sets font size and color for seo letters of website-company name */
@@ -50,12 +48,12 @@ nav h1 .lastname {
 a {
   color: #ffffff;
   text-decoration: none;
+  margin: 5px;
 }
 
 /* Sets font size for all regular text on site */
 p {
   font-size: 16px;
-  margin-left: var(--alignment);
 }
 
 main {
@@ -82,8 +80,8 @@ main section {
 }
 
 main section.contentcard {
-  background-color: #0072bb;
-  color: #ffffff;
+  background-color: #d9dcd6;
+  color: #000000;
   border-style: solid;
   border-width: 1px;
   min-width: 70vw;
@@ -92,21 +90,18 @@ main section.contentcard {
 }
 
 main section.headcard {
-  background-color: #0072bb;
-  color: #ffffff;
+  background-color: #d9dcd6;
+  color: #000000;
   border-style: solid;
   border-width: 1px;
   min-width: 20vw;
-  margin: 20px 2px 0px 10px;
+  margin: 20px 2px 0px 100px;
 
 }
 
 main h2 {
-  margin-left: 2%;
   font-size: 36px;
-  text-align: right;
-  background-color:;
-  
+  text-align: center;
 }
 
 /* Standardizes the sizes of all main content card images*/
