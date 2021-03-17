@@ -93,11 +93,15 @@ main section.contentcard {
 main section.contentcard article {
   border-style: solid;
   border-width: 20px;
-  width: fit-content;
   height: fit-content;
-  flex: 1 0 0;
-  flex-grow: ;
-  
+}
+
+main section.contentcard article:first-child {
+  width: 100%;
+}
+
+main section.contentcard article:not(:first-child) {
+  flex: 1;
 }
 
 
