@@ -38,6 +38,13 @@ nav h1 {
   margin: 0 1px;
 }
 
+/* Describes self image size */
+nav img{
+  max-height: 200px;
+  max-width: 200px;
+  border-radius: 45px;
+}
+
 /* Sets font size and color for seo letters of website-company name */
 nav h1 .lastname {
   color: powderblue;
@@ -63,9 +70,6 @@ main {
 
 }
 
-
-
-
 /* Standardizes the color and sizes of all main content cards and contained text*/
 main section {
   height: fit-content;
@@ -76,6 +80,7 @@ main section {
   text-align: center;
 }
 
+/* Standardizes content card appearance */
 main section.contentcard {
   background-color: #d9dcd6a9;
   color: #000000;
@@ -84,65 +89,47 @@ main section.contentcard {
   min-width: 80vw;
   margin: 20px 10px 0px 3px;
   display: flex;
-  /* Forces elements to the next line if they don't fit */
   flex-wrap: wrap;
   justify-content: center
 
 }
-
+/* Creates colored text for contact links */
 main section.contentcard:last-child a {
   color: var(--sred);
 }
 
-
+/* Justifies content and rounds article corners */
 main section.contentcard article {
-  border-style: solid;
-  border-width: 0px;
   display: inline-block;
   text-align: center;
   border-radius: 6px;
-  padding: 0px;
-  margin: 0px;
-  
-  
 }
 
-main section.contentcard article.tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-
-  position: absolute;
-  z-index: 1;
-}
-
-
+/* Creates image border effects */
 main section.contentcard article img {
   border-radius: 20px;
   border-style: inset;
 }
 
+/* Creates opacity hover effect */
 main section.contentcard article img:hover {
   opacity: .35;
 }
 
+/* Standardizes link info for hovering over link images */
 h3 { 
   display: none;
   position: relative;
   bottom: 250px; 
 } 
-
+/* Causes text hover effect */
 main section.contentcard article img:hover + h3 { 
   display: block; 
-  color: crimson; 
+  color: var(--sred); 
   font-size: 25px;
 }
 
-
+/* Both below cause different behavior for first work card */
 main section.contentcard article:first-child {
   height: 200%;
   flex: 1;
@@ -154,6 +141,7 @@ main section.contentcard article:first-child a img {
   flex: 1;
 }
 
+/* Both below define other work card behavior */
 main section.contentcard article:not(:first-child) {
   flex: 1;
   max-width: fit-content;
@@ -163,7 +151,7 @@ main section.contentcard article:not(:first-child) a img {
   max-height: 280px;
 }
 
-
+/* Both below standardize header styles */
 main section.headcard {
   color: #000000;
   border-style: none;
@@ -195,14 +183,13 @@ footer h2 {
   font-size: 20px;
 }
 
-
 @media screen and (max-width: 1080px) {
   main section.contentcard article:first-child a img {
     max-height: 280px;
     flex: 1;
+  }
+  nav{
     background-color: lightblue;
   }
-  
 
 }
-
