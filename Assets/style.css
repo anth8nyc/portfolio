@@ -25,18 +25,17 @@ nav {
   font-family: sans-serif;
   background-color: var(--sred);
   color: #ffffff;
-  border-radius: 0 0 15px 15px;
+  border-radius: 0 0 45px 45px;
   margin: auto;
   font-size: 20px;
-  flex-direction: row;
   text-align: center;
+  width: fit-content;
 }
 
 /* Sets font size for my name on nav bar and ensures letters are all displayed in line */
 nav h1 {
-  display: flex;
   font-size: 48px;
-  
+  margin: 0 1px;
 }
 
 /* Sets font size and color for seo letters of website-company name */
@@ -70,7 +69,6 @@ main {
 /* Standardizes the color and sizes of all main content cards and contained text*/
 main section {
   width: 50%;
-  padding: 30px;
   height: fit-content;
   font-family: sans-serif;
   border-radius: 15px;
@@ -80,7 +78,7 @@ main section {
 }
 
 main section.contentcard {
-  background-color: #d9dcd6;
+  background-color: #d9dcd6a9;
   color: #000000;
   border-style: solid;
   border-width: 1px;
@@ -90,12 +88,12 @@ main section.contentcard {
 }
 
 main section.headcard {
-  background-color: #d9dcd6;
+  background-color: #d9dcd6a9;
   color: #000000;
   border-style: solid;
   border-width: 1px;
-  min-width: 20vw;
-  margin: 20px 2px 0px 100px;
+  min-width: fit-content;
+  margin: 20px 2px 0px 50px;
 
 }
 
