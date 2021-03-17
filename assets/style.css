@@ -90,6 +90,9 @@ main section.contentcard {
 
 }
 
+main section.contentcard:last-child a {
+  color: var(--sred);
+}
 
 
 main section.contentcard article {
