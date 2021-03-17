@@ -196,22 +196,13 @@ footer h2 {
 }
 
 
-@media screen and (max-width: 992px) {
-  header {
-    background: crimson;
-  }
-  .card {
-    width: 50%;
-  }
-
-}
-
-@media screen and (max-width: 768px) {
-  nav {
+@media screen and (max-width: 1080px) {
+  main section.contentcard article:first-child a img {
+    max-height: 280px;
+    flex: 1;
     background-color: lightblue;
   }
+  
 
-  .card{
-    width: 100%;
-  }
 }
+
