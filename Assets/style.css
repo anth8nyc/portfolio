@@ -68,7 +68,6 @@ main {
 
 /* Standardizes the color and sizes of all main content cards and contained text*/
 main section {
-  width: 50%;
   height: fit-content;
   font-family: sans-serif;
   border-radius: 15px;
@@ -80,9 +79,9 @@ main section {
 main section.contentcard {
   background-color: #d9dcd6a9;
   color: #000000;
-  border-style: solid;
+  border-style: inset;
   border-width: 1px;
-  min-width: 70vw;
+  min-width: 80vw;
   margin: 20px 10px 0px 3px;
   display: flex;
   /* Forces elements to the next line if they don't fit */
@@ -90,6 +89,8 @@ main section.contentcard {
   justify-content: center
 
 }
+
+
 
 main section.contentcard article {
   border-style: solid;
@@ -103,9 +104,41 @@ main section.contentcard article {
   
 }
 
+main section.contentcard article.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  position: absolute;
+  z-index: 1;
+}
+
+
 main section.contentcard article img {
   border-radius: 20px;
+  border-style: inset;
 }
+
+main section.contentcard article img:hover {
+  opacity: .35;
+}
+
+h3 { 
+  display: none;
+  position: relative;
+  bottom: 250px; 
+} 
+
+main section.contentcard article img:hover + h3 { 
+  display: block; 
+  color: crimson; 
+  font-size: 25px;
+}
+
 
 main section.contentcard article:first-child {
   height: 200%;
@@ -114,7 +147,7 @@ main section.contentcard article:first-child {
 }
 
 main section.contentcard article:first-child a img {
-  max-height: 580px;
+  max-height: 565px;
   flex: 1;
 }
 
@@ -129,10 +162,8 @@ main section.contentcard article:not(:first-child) a img {
 
 
 main section.headcard {
-  background-color: #d9dcd6a9;
   color: #000000;
-  border-style: solid;
-  border-width: 1px;
+  border-style: none;
   min-width: fit-content;
   margin: 20px 2px 0px 50px;
 
@@ -140,7 +171,7 @@ main section.headcard {
 
 main h2 {
   font-size: 36px;
-  text-align: center;
+  text-align: right;
 }
 
 /* Standardizes the sizes of all main content card images*/
@@ -173,8 +204,8 @@ footer h2 {
 }
 
 @media screen and (max-width: 768px) {
-  header {
-    background: lightblue;
+  nav {
+    background-color: lightblue;
   }
 
   .card{
