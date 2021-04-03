@@ -1,83 +1,125 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="assets/style.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
     <title>Anthony Castillo</title>
 </head>
 
 <body>
-    <nav>
-        <img src="assets/self.JPG">
+    <nav class="mt-1 navbar-light text-light bg-danger">
+        <img src="assets/images/self.JPG">
         <h1> Anthony Castillo</h1>
             <a href="#work">Work</a>
             <a href="#aboutme">About Me</a>
             <a href="#contact">Contact</a>
     </nav>
-
-    <br>
     
-    <main>
-        <section class="headcard">
-            <h2 id="work">Work</h2>
-        </section>
+    <main class="container-fluid m-3">
+        
 
-            <section class="contentcard"> 
-                <article>
-                    <a href="https://anth8nyc.github.io/homework1/" target="_blank" rel="noopener noreferrer"><img src="assets/sitescreenshot.png"
-                        alt="Image preview of code refractor"/>
-                        <h3>Code Refractor</h3>
-                    </a>  
-                </article>
-                <article>
-                    <a href="https://anth8nyc.github.io/fanpage/" target="_blank" rel="noopener noreferrer"><img src="assets/firstsite.png"
-                        alt="Image preview of fanpage website"/>
-                        <h3>Fanpage</h3>
-                    </a>
-                </article>
-                <article>
-                    <a href="https://anth8nyc.github.io/prework-about-me/" target="_blank" rel="noopener noreferrer"><img src="assets/code.jpg"
-                        alt="Image preview of first assignment"/>
-                        <h3>First Site Deployment</h3>
-                    </a>
-                </article>
+        <div class="row">
+            
+            <section class="col-2">
+                <h2 id="work">Work</h2>
+            </section>
+    
+            <section class="col-9 contentcard pt-5"> 
                 
+                <div class="row">
+
+                    <div class="col-6">
+                        <a href="https://anth8nyc.github.io/MoonPhases/" target="_blank" rel="noopener noreferrer"><img class="rounded prv img-fluid" src="assets/images/projectpreviews/moonphaserdemo.png" 
+                        alt="Image preview of MoonPhaser Project"/>
+                        <h3>MoonPhaser</h3></a>  
+                    </div>
+
+                    <div class="col-6">
+                        <a href="https://anth8nyc.github.io/weatherapp/" target="_blank" rel="noopener noreferrer"><img class="rounded prv img-fluid" src="assets/images/projectpreviews/weatherapp.png" 
+                         alt="Image preview of Weather Dashboard"/>
+                         <h3>Weather Dashboard</h3> </a>
+                     </div>
+
+                </div>
+
+               <div class="row">
+                    <div class="col-6">
+                        <a href="https://anth8nyc.github.io/workdaysched/" target="_blank" rel="noopener noreferrer"><img class="rounded prv img-fluid" src="assets/images/projectpreviews/schedulerdem.png" 
+                            alt="Image preview of Work Day Scheduler"/>
+                            <h3>Work Day Scheduler</h3>
+                        </a>  
+                    </div>
+                    <div class="col-6">
+                        <a href="https://anth8nyc.github.io/javasprint/" target="_blank" rel="noopener noreferrer"><img class="rounded prv img-fluid" src="assets/images/projectpreviews/javasprint.png" 
+                            alt="Image preview of coded JavaScript quiz"/>
+                            <h3>JavaSprint – JavaScript Quiz</h3>
+                        </a>  
+                    </div>
+
+                </div>
+
+                    
             </section>
 
-        <section class="headcard">
-            <h2 id="aboutme" >About Me</h2>
-        </section>
-        
-            <section class="contentcard">
-                <p>
+        </div>
+
+        <div class="row my-3">
+
+            <section class="col-2">
+                <h2 id="aboutme" >About Me</h2>
+            </section>
+            
+            <section class="col-9 contentcard">
+                <p class="p-2 align-self-center">
                     I am a newly educated web developer from Richardson, TX. I first studied Neuroscience 
-                    at the University of Texas at Dallas, and hope to combine a growing knowledge of web development
-                    with this knowledge to sharpen a unification of cognition and intuitive UI/AI. I learned web 
+                    at the University of Texas at Dallas, and hope to combine a budding knowledge of web development
+                    with this experience to sharpen a unification of cognition and intuitive UI/AI. I learned web 
                     development through a bootcamp course offered by Southern Methodist University and Trilogy Education services and was drawn to web
                     development because it is increasingly like a language-- important for expression, 
                     knowledge, culture, and therefore love. I want to learn to speak it.
                 </p>
             </section>
             
-            <section class="headcard">
+        </div>
+
+        <div class="row">
+
+            <section class="col-2">
                 <h2 id="contact">Contact</h2>
             </section>
             
-            <section class="contentcard">
-                <p>
-                    <a href="tel:4692009850">(469) 200-9850</a> 
-                    <a href = "mailto:anthonycastillo821@gmail.com">Email: anthonycastillo821@gmail.com</a>  
+            <section class="col-9 p-2 contentcard">
+                <p class="p-2">
+                    <a class="text-danger align-self-center" href="tel:4692009850">(469) 200-9850</a>  | 
+                    <a class="text-danger align-self-center" href = "mailto:anthonycastillo821@gmail.com">Email: anthonycastillo821@gmail.com</a>  | 
+                    <a class="text-danger align-self-center" href="assets/Resume_A.CastilloC.pdf">Resume</a>  |
+                    <a class="text-danger align-self-center" href="https://www.linkedin.com/in/anthony-castillo-5b0631158/">LinkedIn</a>
                 </p>
             </section> 
+            
+        </div>
 
     </main>
   
+
     <footer>
         <p>
             &copy;
         </p>
     </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
 </body>
 
 </html>

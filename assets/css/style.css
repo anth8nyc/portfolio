@@ -1,0 +1,155 @@
+:root {
+  --sred: rgb(122, 23, 23);
+  --ssky: lightblue;
+  --sblue: blue;
+  --alignment: 40px;
+}
+
+/* Standardizes padding and margin behavior for entire site */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Sets entire portfolio background color */
+body {
+  background-color: #ffffff;
+}
+
+/* Defines nav bar link spacing, positioning and font  */
+/* Defines nav bar size and spacing, color, my name font and color */
+nav {
+  padding: 15px;
+  height: fit-content;
+  font-family: sans-serif;
+  background-color: var(--sred);
+  color: #ffffff;
+  border-radius: 0 0 45px 45px;
+  margin: auto;
+  font-size: 20px;
+  text-align: center;
+  width: fit-content;
+}
+
+/* Sets font size for my name on nav bar and ensures letters are all displayed in line */
+nav h1 {
+  font-size: 48px;
+  /* margin: 0 1px; */
+}
+
+/* Describes self image size */
+nav img{
+  max-height: 200px;
+  max-width: 200px;
+  border-radius: 45px;
+}
+
+
+
+/* Sets font color to white for site nav bar links */
+a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 5px;
+}
+
+/* Sets font size for all regular text on site */
+p {
+  font-size: 16px;
+}
+
+main {
+
+  margin-top: 2%;
+
+}
+
+/* Standardizes the color and sizes of all main content cards and contained text*/
+main section {
+  font-family: sans-serif;
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* Standardizes content card appearance */
+main section.contentcard {
+  background-color: #d9dcd6a9;
+  color: #000000;
+  border-style: inset;
+  border-width: 1px;
+}
+/* Creates colored text for contact links */
+main section.contentcard:last-child a {
+  color: var(--sred);
+}
+
+/* Justifies content and rounds article corners */
+main section.contentcard  {
+  border-radius: 6px;
+ 
+}
+
+/* Creates image border effects */
+main section.contentcard img {
+  border-radius: 20px;
+  border-style: inset;
+  overflow: hidden;
+  height: 150px;
+}
+
+/* Creates opacity hover effect */
+main section.contentcard img:hover {
+  opacity: .35;
+}
+
+/* Standardizes link info for hovering over link images */
+h3 { 
+  visibility: hidden;
+  position: relative;
+  bottom: 45px;  
+} 
+/* Causes text hover effect */
+main section.contentcard img:hover + h3 { 
+  color: var(--sred); 
+  font-size: 25px;
+  visibility: visible;
+  text-decoration: none;
+}
+
+/* Both below standardize header styles */
+main section.headcard {
+  color: #000000;
+  border-style: none;
+  margin: 20px 2px 0px 50px;
+
+}
+
+main h2 {
+  font-size: 36px;
+  text-align: right;
+}
+
+/* Establishes footer spacing and font */
+footer {
+  padding: 30px;
+  clear: both;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* Sets footer heading text size */
+footer h2 {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1080px) {
+  main section.contentcard article:first-child a img {
+    /* max-height: 280px; */
+    flex: 1;
+  }
+  nav{
+    background-color: lightblue;
+  }
+
+}
