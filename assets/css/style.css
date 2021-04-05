@@ -84,7 +84,7 @@ main section.contentcard img {
 }
 
 /* Creates opacity hover effect */
-main .contentcard img:hover {
+main .contentcard img.prv:hover {
   opacity: .35;
 }
 
