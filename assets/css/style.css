@@ -1,5 +1,5 @@
 :root {
-  --sred:rgb(143, 176, 187);
+  --sfly:rgb(143, 176, 187);
   --ssky: lightblue;
   --sblue: rgb(160, 60, 77);
   --ssun: rgb(175, 46, 59);
@@ -11,23 +11,19 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Josefin Sans', sans-serif;
 }
 
 /* Sets entire portfolio background color */
 body {
   background-color: #ffffff;
+  font-family: 'Josefin Sans', sans-serif;
+
 }
 
-/* Defines nav bar link spacing, positioning and font  */
-/* Defines nav bar size and spacing, color, my name font and color */
 nav {
-  /* padding: 30px; */
-  /* height: fit-content; */
-  background-color: var(--sred);
+  background-color: var(--sfly);
   color: #ffffff;
   border-radius: 50px;
-  /* margin: auto; */
   margin: 20px;
   font-size: 20px;
   text-align: center;
@@ -36,7 +32,6 @@ nav {
 /* Sets font size for my name on nav bar and ensures letters are all displayed in line */
 nav h1 {
   font-size: 30px;
-  /* margin: 0 1px; */
 }
 
 
@@ -73,10 +68,6 @@ main section.contentcard {
   border-style: inset;
   border-width: 1px;
 }
-/* Creates colored text for contact links */
-main section.contentcard:last-child a {
-  color: var(--sred);
-}
 
 /* Justifies content and rounds article corners */
 main section.contentcard  {
@@ -96,20 +87,6 @@ main section.contentcard img {
 main .contentcard img:hover {
   opacity: .35;
 }
-
-/* Standardizes link info for hovering over link images */
-/* h3 {  */
-  /* visibility: hidden; */
-  /* position: relative; */
-  /* bottom: 45px;   */
-/* }  */
-/* Causes text hover effect */
-/* main section.contentcard img:hover + h3 {  */
-  /* color: var(--sred);  */
-  /* font-size: 25px; */
-  /* visibility: visible; */
-  /* text-decoration: none; */
-/* } */
 
 /* Both below standardize header styles */
 main .titlecard {
@@ -137,8 +114,6 @@ footer {
 footer h2 {
   font-size: 20px;
 }
-
-
 
 
 .worklink {
@@ -182,13 +157,4 @@ footer h2 {
   border-radius: 50px;
 }
 
-@media screen and (max-width: 1080px) {
-  main section.contentcard article:first-child a img {
-    /* max-height: 280px; */
-    flex: 1;
-  }
-  nav{
-    background-color: lightblue;
-  }
 
-}
