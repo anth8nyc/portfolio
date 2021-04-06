@@ -23,7 +23,7 @@ body {
 nav {
   background-color: var(--sfly);
   color: #ffffff;
-  border-radius: 50px;
+  border-radius: 25px;
   margin: 20px;
   font-size: 20px;
   text-align: center;
@@ -69,11 +69,6 @@ main section.contentcard {
   border-width: 1px;
 }
 
-/* Justifies content and rounds article corners */
-main section.contentcard  {
-  border-radius: 6px;
- 
-}
 
 /* Creates image border effects */
 main section.contentcard img {
@@ -91,15 +86,14 @@ main .contentcard img.prv:hover {
 /* Both below standardize header styles */
 main .titlecard {
   color: #000000;
-  border-right-style: solid;
-  border-right-color:var(--ssky);
-  margin: 20px 2px 0px 50px;
-
+  border-bottom-style: solid;
+  border-bottom-color:var(--ssky);
+  
 }
 
 main h2 {
   font-size: 26px;
-  text-align: right;
+  text-align: center;
 }
 
 /* Establishes footer spacing and font */
@@ -118,7 +112,6 @@ footer h2 {
 
 .worklink {
   position: relative;
-  width: 50%;
 }
 
 .prv {
@@ -154,7 +147,27 @@ footer h2 {
   color: white;
   font-size: 16px;
   padding: 16px 32px;
-  border-radius: 50px;
+  border-radius: 25px;
+}
+
+
+@media (min-width: 768px) { 
+
+  main .titlecard {
+    color: #000000;
+    border-right-style: solid;
+    border-right-color:var(--ssky);
+    margin: 20px 2px 0px 50px;
+    border-bottom-style: none;
+  
+  }
+
+  main h2 {
+    font-size: 26px;
+    text-align: right;
+  }
+
+
 }
 
 
