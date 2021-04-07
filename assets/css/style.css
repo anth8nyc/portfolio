@@ -42,6 +42,13 @@ a {
   margin: 5px;
 }
 
+a:hover{
+
+  color: var(--ssun);
+  text-decoration: none;
+
+}
+
 /* Sets font size for all regular text on site */
 p {
   font-size: 16px;
@@ -112,6 +119,7 @@ footer h2 {
 
 .worklink {
   position: relative;
+  margin: 15px 0px;
 }
 
 .prv {
@@ -122,6 +130,7 @@ footer h2 {
   transition: .5s ease;
   backface-visibility: hidden;
 }
+
 
 .middle {
   transition: .5s ease;
@@ -134,19 +143,11 @@ footer h2 {
   text-align: center;
 }
 
-.worklink:hover .prv {
-  opacity: 0.3;
-}
-
-.worklink:hover .middle {
-  opacity: 1;
-}
-
 .worktitle {
   background-color: var(--ssun);
   color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+  font-size: 12px;
+  padding: 10px 16px;
   border-radius: 25px;
 }
 
@@ -168,6 +169,52 @@ footer h2 {
   }
 
 
+
+  .worklink {
+    position: relative;
+    margin: 0px;
+  }
+  
+  .prv {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-style: none;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .worklink:hover .prv {
+    opacity: 0.3;
+  }
+  
+  .worklink:hover .middle {
+    opacity: 1;
+  }
+  
+  .worktitle {
+    background-color: var(--ssun);
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 25px;
+  }
+
+  #me {
+    border-style: none;
+    border-radius: .50rem!important;
+  }
+
 }
-
-
